@@ -26,6 +26,7 @@ export default class Search extends React.Component {
                             className="validate"
                             placeholder="Search"
                             value={this.state.search}
+                            autoComplete='off'
                             onChange={(e) => this.setState({ search: e.target.value })}
                             onKeyDown={this.handleKey} />
                         <button className="btn btn_search" onClick={(e) => this.props.searchMovies(this.state.search, this.state.type)}>Search Movie</button>
